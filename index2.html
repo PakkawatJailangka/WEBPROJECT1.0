@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+
+<body>
+
+    <!-- haeder -->
+    <div class="header">
+        <!-- <header class="header"> -->
+
+        <div id="menu-btn" class="fas fa-bars col-2"></div>
+
+        <a href="#" class="logo col-4">ธณพรยานยนต์</a>
+
+        <!-- icon เส้น -->
+        <!-- <div class="bx bx-menu"id="menu-icon"></div> -->
+
+        <nav class="navbar col-5">
+            <a href="#home">หน้าหลัก</a>
+            <a href="#contact">หน้าควบคุมระบบ</a>
+
+        </nav>
+        <div id="admin col-3">
+            <!-- <button class="admin">admin name <br>
+                ผู้ดูแลระบบ</button>
+            <i class='far fa-user'></i> -->
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Admin
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" type="button">แก้ไขโปรไฟล์</a></li>
+                    <li><a class="dropdown-item" href="#" type="button">เปลี่ยนรหัสผ่าน</a></li>
+                    <li><a class="dropdown-item" href="#" type="button">ดูประวัติการซื้อ</a></li>
+                    <li><a class="dropdown-item" href="#" type="button">ออกจากระบบ</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </header>
+
+    <!-- login form -->
+    <div class="login-form-container">
+        <form action="">
+
+        </form>
+    </div>
+
+
+
+    <!-- </header> -->
+
+    <!-- login form -->
+    <div class="login-form-container">
+        <form action="">
+
+        </form>
+    </div>
+    </div>
+
+
+
+    <!-- script.js -->
+    
+
+    <!-- ฝั่งแถบข้าง -->
+    <aside>
+        <div class="side">
+            <div class="logo">
+                <ul class="menu"><br><br><br><br><br><br><br><br>
+                    <li>
+                        <a href="index1.html">
+                            <img src="pic/badge_FILL0_wght400_GRAD0_opsz24.png">
+                            <span>รายชื่อลูกค้า</span>
+                        </a>
+                    </li>
+                    <br><br><br>
+
+                    <li>
+                        <a href="index2.html">
+                            <img src="pic/car_tag_FILL0_wght400_GRAD0_opsz24.png">
+                            <span>สินค้า</span>
+                        </a>
+                    </li>
+                    <br><br><br>
+
+
+                    <li>
+                        <a href="index5.html">
+                            <img src="pic/account_balance_FILL0_wght400_GRAD0_opsz24.png">
+                            <span>รายได้</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- หัวข้อ -->
+    <main class="main_con col-12">
+        <br>
+        <div class="main-content col-1">
+            <br><br>
+            <h2><img src="pic/article_FILL0_wght400_GRAD0_opsz24.png">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สินค้า</h2>
+        </div><br>
+
+
+        <!-- เส้นดำ -->
+        <div class="content">
+            <div class="title">
+                <div class="data col-10">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- กล่องข้อความ -->
+
+        <div class="main-title">
+            <div class="main-table">
+                <span class="top">กรอกข้อมูลสินค้า</span>
+            </div>
+            <form action="/insert-stock" method="post">
+                <div class="colum">
+                    <div class="all col-3">
+                        <div class="detail1">
+                            <!-- text input -->
+                            <div class="Number_product">
+                                <label for="numeng" class="form-label">หมายเลขเครื่อง:</label>
+                                <input type="text" class="from-control" id="numeng" name="numeng" required>
+                            </div>
+            
+                            <div class="Name_product">
+                                <label for="name" class="form-label">&nbsp;ชื่อสินค้า:</label>
+                                <input type="text" class="from-control" id="name" name="name" required>
+                            </div>
+            
+                            <div class="Type_car">
+                                <label for="year" class="form-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปี:</label>
+                                <input type="text" class="from-control" id="year" name="year" required>
+                            </div>
+            
+                            <div class="Year">
+                                <label for="type" class="form-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รุ่น:</label>
+                                <input type="text" class="from-control" id="type" name="type" required>
+                            </div>
+            
+                            <div class="color">
+                                <label for="color" class="form-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สี:</label>
+                                <input type="text" class="from-control" id="color" name="color" required>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <div class="all col-3">
+                        <div class="detail2">
+                            <!-- drop -->
+                            <div class="select-bar">
+                                <label for="brand" class="form-label">ยี่ห้อรถยนต์</label>
+                                <select class="form-select" id="brand" name="brand" required>
+                                    <option value=""></option>
+                                    <option value="HONDA">HONDA</option>
+                                    <option value="YAMAHA">YAMAHA</option>
+                                    <option value="TOYOTA">TOYOTA</option>
+                                    <option value="ISUZU">ISUZU</option>
+                                    <option value="MITSUBISHI">MITSUBISHI</option>
+                                    <option value="FORD">FORD</option>
+                                    <option value="NISSAN">NISSAN</option>
+                                    <option value="SUZUKI">SUZUKI</option>
+                                    <option value="MAZDA">MAZDA</option>
+                                </select>
+                            </div>
+            
+                            <div class="select-bar">
+                                <label for="type" class="form-label">ประเภทรถ</label>
+                                <select class="form-select" id="seat" name="type" required>
+                                    <option value=""></option>
+                                    <option value="bike">รถจักรยานยนต์</option>
+                                    <option value="2door">เก๋ง 2 ประตู</option>
+                                    <option value="4door">เก๋ง 4 ประตู</option>
+                                    <option value="Pickup">รถกระบะ</option>
+                                    <option value="van">รถตู้</option>
+                                </select>
+                            </div>
+            
+                            <div class="select-bar">
+                                <label for="gear" class="form-label">ระบบเกียร์</label>
+                                <select class="form-select" id="gear" name="gear" required>
+                                    <option value=""></option>
+                                    <option value="normal-gear">เกียร์ธรรมดา</option>
+                                    <option value="auto-gear">เกียร์อัตโนมัติ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all col-3">
+                        <div class="detail3">
+                            <div class="select-bar">
+                                <label for="price-range" class="form-label">ช่วงราคา</label>
+                                <select class="form-select" id="price-range" name="price_range" required>
+                                    <option value=""></option>
+                                    <option value="30000">น้อยกว่า 30,000</option>
+                                    <option value="30000-50000">30,000 - 50,000</option>
+                                    <option value="50000-70000">50,000 - 70,000</option>
+                                    <option value="70000-100000">70,000 - 100,000</option>
+                                    <option value="100000-150000">100,000 - 150,000</option>
+                                    <option value="150000-200000">150,000 - 200,000</option>
+                                    <option value="200000-250000">200,000 - 250,000</option>
+                                    <option value="250000-300000">250,000 - 300,000</option>
+                                    <option value="300000-400000">300,000 - 400,000</option>
+                                    <option value="400000-500000">400,000 - 500,000</option>
+                                    <option value="500000-1000000">500,000 이상</option>
+                                </select>
+                            </div>
+                            <br>
+                            <!-- text input -->
+                            <div class="price">
+                                <label for="price" class="form-label">ราคา:</label>
+                                <input type="text" class="from-control" id="price" name="price" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+                
+
+
+
+                <br>
+        </div>
+        <br><br>
+        <!-- ตาราง -->
+        <div class="tabular">
+            <h3 class="main--title">ข้อมูลลูกค้า</h3><br><br>
+            <div class="table-data">
+                <table id="car-table">
+                    <thead>
+                      <tr>
+                        <th>ลำดับ</th>
+                        <th>เลขตัวถัง</th>
+                        <th>รุ่น</th>
+                        <th>ยี่ห้อรถยนต์</th>
+                        <th>ประเภทรถ</th>
+                        <th>ระบบเกียร์</th>
+                        <th>สี</th>
+                        <th>ปี</th>
+                        <th>ราคา</th>
+                      </tr>
+                    </thead>
+                    <tbody id="car-table-body">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <script>
+            fetch('/data')
+  .then(response => response.json())
+  .then(data => {
+    // เรียงข้อมูลตามลำดับ id (จากน้อยไปมาก)
+    data.sort((a, b) => a.id - b.id);
+
+    const carTableBody = document.getElementById('car-table-body');
+    data.forEach(car => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${car.id}</td>
+        <td>${car.numeng}</td>
+        <td>${car.name}</td>
+        <td>${car.brand}</td>
+        <td>${car.type}</td>
+        <td>${car.gear}</td>
+        <td>${car.color}</td>
+        <td>${car.year}</td>
+        <td>${car.price}</td>
+      `;
+      carTableBody.appendChild(row);
+    });
+  });
+
+          </script>
+        <!-- ปุ่นถัดย้อนกลับ -->
+        <div class="table-tail">
+            <a href="#" class="btn-btn-primary-back">หน้าย้อนกลับ</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn-btn-primary-next">หน้าถัดไป</a>
+        </div>
+    </main>
+    </div>
+
+</body>
+
+</html>
